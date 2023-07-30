@@ -105,12 +105,16 @@ font-style: normal;
     padding: 35px 40px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 40px;
     color:#FFF;
     font-family: 'Forum', cursive;
-    line-height: 50px;
     justify-content: center;
     align-items: center;
+}
+
+.intro__name-p{
+    font-weight: 400;
+    font-size: 40px; 
+    line-height: 50px;
     letter-spacing: 3px;
 }
 
