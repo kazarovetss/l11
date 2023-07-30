@@ -12,7 +12,8 @@ body{
 }
 h2{
     font-weight: normal;
-    margin: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 p{
    margin:0px;
