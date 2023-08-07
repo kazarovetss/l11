@@ -1,1 +1,7 @@
-console.log(Ваша оценка - 95 баллов\nОтзыв по пунктам ТЗ:\nНе выполненные/не засчитанные пункты:\n1) Два списка ul > li > a - панель навигации, ссылки на соцсети в футере\n)
+$(document).ready(function(){
+    $(".header_burger").click(function(event){
+        $(".header_burger, .nav").toggleClass('active');
+        $("body").toggleClass('lock');
+
+    });
+});
