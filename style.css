@@ -9,6 +9,10 @@ body{
     background-color: #FFF;
     margin: 0;
     color:#fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 h2{
     font-weight: normal;
@@ -35,9 +39,6 @@ img{
 }
 .header{
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
     z-index: 50;
 }
 .header:before{
