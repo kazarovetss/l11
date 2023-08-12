@@ -9,15 +9,15 @@ body{
     background-color: #FFF;
     margin: 0;
     color:#fff;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
+ 
 }
 h2{
     font-weight: normal;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin:0px;
+    padding:0px;
+}
+ul{
+    padding:0px;
 }
 p{
    margin:0px;
@@ -34,11 +34,14 @@ img{
     display: block;
 }
 .container{
-    width: 1440px;
-    margin: 0 auto;
+    max-width: 1440px;
+    margin:auto;
 }
 .header{
     position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 50;
 }
 .header:before{
@@ -48,7 +51,6 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    
     background-color: #0C0C0E;
     z-index: 2;
 }
@@ -129,23 +131,21 @@ font-style: normal;
     height: 28px;
     margin-right: 20px;
 }
-@media (max-width:768px){
+@media (max-width:1000px){
     .container{
         max-width: 768px;
         margin: 0 auto;
     }
-    .about__img-wrapper{
-        display: flex;
-        margin: 0 50%;
-    }
-    .about__img-wrapper :nth-last-child(1){
-        display: none;
+    .about__img-wrapper img{
+        display: block;
+        margin: 0 auto;
     }
     .about__img-wrapper :nth-last-child(2){
         display: none;
     }
-}
-@media (max-width:768px){
+    .about__img-wrapper :nth-last-child(3){
+        display: none;
+    }
     .header__line-profile{
         position: absolute;
         left:650px;
@@ -227,16 +227,18 @@ font-style: normal;
     .header_list li{
         margin-bottom: 30px;
     }
+    
 }
+
 .intro__wrapper{
-   
+    max-width: 1440px;
     min-height: 600px;
     padding: 220px 840px 160px 0px;
     background-image: url("welcome-1440.jpg");
     margin-bottom: 20px;
 }
 .intro__name{
-    max-width: 600px;
+    width: 600px;
     height: 220px;
     background-color: #0C0C0E;
     padding: 35px 40px;
@@ -254,7 +256,9 @@ font-style: normal;
     line-height: 50px;
     letter-spacing: 3px;
 }
-
+.about__wrapper{
+    padding: 20px 20px 40px 20px;
+}
 .about__title{
     text-align: center;
     color: #0C0C0E;
@@ -269,7 +273,9 @@ font-weight: 400;
 .about__border{
     width: 50px;
     border-bottom: 1px solid #0C0C0E;
-    margin-left: 695px;
+    /* margin-left:50%; */
+margin-inline-start: 48%;
+margin-inline-end: 62%;
     margin-bottom: 40px;
 }
 .about__info{
@@ -316,8 +322,14 @@ margin-bottom: 40px;
     height: 16px;
     border-radius: 50%;
     background-color: #0C0C0E;
+    margin-right: 5px;
 }
-
+.about__color-4{
+    display: none;
+}
+.carret{
+    display: none;
+}
 .footer__wrapper{
     background-color: #0C0C0E;
     height: 250px;
@@ -399,7 +411,8 @@ letter-spacing: 2px;
 .coffee-shop__border{
     width: 50px;
     border-bottom: 1px solid #0C0C0E;
-    margin-left: 675px;
+    margin-inline-start: 48%;
+margin-inline-end: 62%;
     margin-bottom: 40px;
 }
 
@@ -407,6 +420,7 @@ letter-spacing: 2px;
     display:flex;
     align-items: center;
     justify-content: space-between;
+
     
 }
 .coffee-and-tea-menu__wrapper{
@@ -610,6 +624,7 @@ button:hover {
 }
 
 .favorite_wrapper{
+    position: relative;
     padding: 20px 20px 40px 20px;
 }
 
@@ -622,6 +637,7 @@ margin-bottom: 40px;
 }
 
 .radio_button{
+    display: flex;
     color: #000;
     margin: 15px 0px 40px 0px;
 }
@@ -712,4 +728,60 @@ margin-bottom: 20px;
    left:20px;
    bottom:15px;
    
+}
+.form_season{
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media (max-width:1000px){
+    .main_border:nth-last-child(2){
+        margin-bottom: 40px;
+    }
+    .coffee-shop-menu__wrapper{
+        display: block;
+    }
+    .coffee-and-tea-menu{
+        margin-bottom: 40px;
+    }
+    .desert-and-cakes-menu{
+       margin-left:auto;
+    }
+   .contacts_wrapper{
+    display: block;
+   }
+   .contacts_map{
+   margin-top:100px;
+   }
+   .card_wrapper{
+    display: block;
+   }
+   .card_block{
+    margin: 0 auto 20px;
+   }
+   .get_card{
+    width: auto;
+   }
+   .get_card_2{
+    text-align: center;
+    margin: 0 auto 50px;
+    width:600px;
+   }
+   .get_card_1{
+    text-align: center;
+   }
+   .mini_button{
+    display: flex;
+    justify-content: center;
+   }
+   .about__color-4{
+    display:block;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 5px;
+   }
+   .carret{
+    display: block;
+   }
 }
