@@ -14,22 +14,25 @@
         <div class="container">
             <div class="header__line-wrapper">
                 <h1 class="header__line-name">Brooklyn Public Library</h1>
-                 <div class="header_burger">
+                <div class="header_burger">
                     <span></span>
                 </div>
-                    <nav  class="nav">
-                        <a class="nav__link" href="#about">About</a>
-                        <a class="nav__link" href="#favorites">Favorites</a>
-                        <a class="nav__link" href="#coffee-shop">Coffee Shop</a>
-                        <a class="nav__link" href="#our_contacts">Contacts</a>
-                        <a class="nav__link" href="#digital_library_card">Library Card</a>
-                    </nav>
+                <nav class="nav">
+                    <ul class="header_list">
+                        <li><a class="nav__link" href="#about">About</a></li>
+                        <li><a class="nav__link" href="#favorites">Favorites</a></li>
+                        <li><a class="nav__link" href="#coffee-shop">Coffee Shop</a></li>
+                        <li><a class="nav__link" href="#our_contacts">Contacts</a></li>
+                        <li><a class="nav__link" href="#digital_library_card">Library Card</a></li>
+                    </ul> 
+                </nav>
+                
              <a class="header__line-profile" href="#intro"><img src="icon_profile.svg" alt="icon"></a>
             </div>
         </div>
     </section>
 </header>
-<main>
+<main class="main">
   <div class="intro" id="intro">
     <div class="container">
         <div class="intro__wrapper">
@@ -45,14 +48,18 @@
             <div class="about__border"></div>
             <div class="about__info">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</div>
             <div class="about__img-wrapper">
+             <img class="carret" src="Carret_Left.svg" alt="left">
              <img src="image1.png" alt="img1">
              <img src="image2.png" alt="img2">
              <img src="image3.png" alt="img3">
+             <img class="carret" src="Carret_Right.svg" alt="right">
             </div>
             <div class="about__color">
                 <span class="about__color-1"></span>
                 <span class="about__color-2"></span>
                 <span class="about__color-3"></span>
+                <span class="about__color-4"></span>
+                <span class="about__color-4"></span>
             </div>
         </div>
     </div>
@@ -64,7 +71,7 @@
             <div class="coffee-shop__border"></div>
             <p class="pick_season"><b>Pick favorites of season</b></p>
             <div class="radio_button">
-                <form>
+                <form class="form_season">
                     <input class="radio" type="radio" id="winter"
      name="season" value="winter">
     <label class="label" for="winter">Winter</label>
@@ -247,8 +254,9 @@
             <div class="get_card">
                 <p class="get_card_1">Get a reader card</p>
                 <p class="get_card_2">You will be able to see a reader card after logging into account or you can register a new account</p>
-                <button class="button_mini">Sign Up</button>
-                <button class="button_mini" id="last">Log In</button>
+                <div class="mini_button"><button class="button_mini">Sign Up</button>
+                <button class="button_mini" id="last">Log In</button></div>
+                
             </div>
         </div>
     </div>
@@ -283,7 +291,7 @@
         </div>
     </div>
 </footer>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
